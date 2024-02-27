@@ -2,5 +2,101 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
+#main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    max-width: 400px;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+.title{
+    text-align: center;
+    font-size: 20px;
+    color: #000;
+    font-weight: bold;
+    padding: 10px 0px;
+}
+
+.form{
+    background-color: #000000;
+    padding: 10px 10px 20px 10px;
+}
+
+.input{
+    padding: 10px 15px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 2px solid rgb(211, 211, 211);
+    background-color: #ffffffe0;
+    width: 100%;
+}
+
+.input:focus{
+    outline: none;
+    border: 2px solid #fff;
+}
+
+.name{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.fields{
+    display: flex;
+    flex-direction: column;
+}
+
+.fields input{
+    margin-bottom: 30px;
+}
+
+.checkCon{
+    margin-bottom: 30px;
+    user-select: none;
+}
+
+.check{
+    font-size: 1em;
+    color: #3f3f3f;
+}
+
+.submit{
+    width: 100%;
+    padding: 10px 0px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: #333333d0;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.1s linear;
+}
+
+.submit:hover{
+    background-color: #ffffffe0;
+    color: #000;
+}
+
+.account{
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    background-color: #000;
+    padding: 0px 0px 10px 10px;
+}
+
+.account a{
+    color: white;
+}
