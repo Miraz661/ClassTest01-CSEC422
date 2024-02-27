@@ -13,18 +13,19 @@
         <div class="container">
             <div class="title">User Registration</div>
             <div class="form">
-                <form action="#">
+                <form action="#" id="form">
                     <div class="name">
-                        <input type="text" name="fName" id="fName" placeholder="First Name" class="input">
-                        <input type="text" name="lName" id="lName" placeholder="Last Name" class="input">
+                        <input type="text" name="fName" id="fName" placeholder="First Name" class="input" required>
+                        <input type="text" name="lName" id="lName" placeholder="Last Name" class="input" required>
                     </div>
                     <div class="fields">
-                        <input type="email" name="email" id="email" placeholder="Email" class="input">
-                        <input type="password" name="pass" id="pass" placeholder="Password" class="input">
-                        <input type="password" name="cPass" id="cPass" placeholder="Confirm Password" class="input">
+                        <input type="email" name="email" id="email" placeholder="Email" class="input" required
+                            autocomplete="off">
+                        <input type="password" name="pass" id="pass" placeholder="Password" class="input" required>
+                        <input type="password" name="cPass" id="cPass" placeholder="Confirm Password" class="input" required>
                     </div>
                     <div class="checkCon">
-                        <input type="checkbox" name="check" id="check">
+                        <input type="checkbox" name="check" id="check" required>
                         <label class="check" for="check">I accept the Terms of Use & Privacy Policy</label>
                     </div>
                     <div id="submit">
@@ -38,6 +39,15 @@
             </div>
         </div>
     </section>
+
+    <!-- <script>
+        const btn = document.getElementById("form");
+        btn.addEventListener("submit",(e)=>{
+            e.preventDefault();
+            alert("Registration Successful !");
+        })
+    </script> -->
+
 </body>
 
 </html>
